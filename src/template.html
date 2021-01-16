@@ -29,6 +29,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      table{
+        border    : 1px solid black;
+        font-size : 1.5rem;
+        text-align: center;
+      }
+      th{
+        border    : 1px solid black; 
+        padding   : 8px ;
+      }
+      td{
+        border    : 1px solid black;
+        padding   : 8px ;
+      }
+      @media screen  and (max-width: 700px){
+        table{
+                font-size : 1rem;
+        }
+      }
+    </style>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
@@ -156,8 +176,12 @@
                    This is an functionality heavy project made with react and json server. I have given the case study here I need to decode that case study and once done need to implemented what have been shared in that case study.
 
                     Implemted asycn redux, higher order component, sign-in feature.
-                    planyourtrip@gmail.com admin@12
-                    cabincrew1@gmail.com crew@12
+                    <table>
+                        <tr>  <th>Role</th>   <th>Id</th> <th>password</th></tr>
+                        <tr>  <td>Admin</td>   <td>planyourtrip@gmail.com</td>   <td>admin@1234</td>     </tr>
+                        <tr>  <td>Crew</td>   <td>cabincrew1@gmail.com</td>      <td>crew@1234</td>      </tr>
+                    </table>
+                    
                   </p>
                   <p class="mb-4">See the live Demo</p>
                 </div>
@@ -214,38 +238,45 @@
               </div>
             </div>
           </div>
-          <!-- <div class="row">
+          <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Face API</h3>
+                <h3 class="project-wrapper__text-title">Survey Generator</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                   This is <strong>React</strong> and  <strong> Express</strong> based application. </p>
+                    <p>This application will help application user to generate survey.</p>  
+                    <p>These generated survey then send to various email address (provided by user) for there responses   </p>
+                     <p>Features implemented are</p> 
+                   
+                   <ul>
+                     <li> <p> Authentication with google oauth provider with help of passport js</p></li>
+                     <li><p>  Backed on MongoDB to store user, survey and survey responses</p></li>
+                     <li><p>  Stripe integration for payment</p></li>
+                     <li><p>  Integration with node-mailler to send mails</p></li>
+                     <li><p>  various react material stuf are used for UI</p></li>
+                   </ul>   
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://ayushjain-18.github.io/DOM-manipulation/">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://survey-creator-ayush-jain-18.herokuapp.com/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <!-- <a target="_blank" class="cta-btn text-color-main" href="#!">
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-3 col-sm-12"></div>
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://survey-creator-ayush-jain-18.herokuapp.com/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/project4.jpg" />
                   </div>
                 </a>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- /END Project -->
         </div>
       </div>
